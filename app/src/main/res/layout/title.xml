@@ -1,29 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="?attr/actionBarSize"
     android:layout_margin="15dp"
     >
 
+
+
+    <Button
+        android:id="@+id/nav_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/ic_home"
+        android:layout_centerVertical="true"
+
+        />
     <TextView
         android:id="@+id/title_city"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+
         android:textColor="#fff"
         android:textSize="30sp"
         android:text="重庆"
         />
     <TextView
-        android:text="2017年11月23日 10点29分"
+        android:text="2017-11-23 10:29"
         android:id="@+id/title_update_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="10dp"
+
         android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
         android:textColor="#fff"
-        android:textSize="12sp"
+        android:textSize="10sp"
         />
 
 

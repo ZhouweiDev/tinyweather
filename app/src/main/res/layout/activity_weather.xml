@@ -16,6 +16,14 @@
 
         />
 
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <ScrollView
         android:id="@+id/weather_layout"
         android:layout_width="match_parent"
@@ -24,6 +32,7 @@
         android:overScrollMode="never"
         >
         <LinearLayout
+            android:fitsSystemWindows="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -46,5 +55,17 @@
 
 
     </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
 
+<fragment
+    android:id="@+id/chooser_area_frament"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="com.tinyweather.android.util.ChooseAreaFragment"
+    android:layout_gravity = "start"
+    />
+
+
+
+</android.support.v4.widget.DrawerLayout>
 </FrameLayout>
